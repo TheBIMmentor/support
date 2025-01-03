@@ -11,17 +11,19 @@ Guides and Boilerplate code for starting your Revit Addins
 	Add these files from your Revit install folder:
 	RevitAPI.dll
 	RevitAPIUI.dll
-	Right-click each added reference → Properties → Set Copy Local to False.
+	Right-click each added Reference (or Alt + Enter on PC) → Properties → Set Copy Local to False.
 4. Add Boilerplate Code
 	Right-click your project → Add → Class → Name it.
 	Copy and paste this code into the class file:
 
-using Autodesk.Revit.UI;
+using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
+using Autodesk.Revit.UI;
+using Autodesk.Revit.UI.Selection;
 
 namespace YourProjectName
 {
-    [Transaction(TransactionMode.Manual)]
+    [Transaction(TransactionMode.Manual]
     public class ClassName : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
@@ -29,9 +31,7 @@ namespace YourProjectName
             UIApplication uiApp = commandData.Application;
             UIDocument uiDoc = uiApp.ActiveUIDocument;
             Document doc = uiDoc.Document;
-
-            // Your custom code here
-
+            // Your code here
             return Result.Succeeded;
         }
     }
