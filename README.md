@@ -16,7 +16,7 @@ Guides and Boilerplate code for starting your Revit Addins
 	Right-click your project → Add → Class → Name it.
 	
  
- //Copy and paste this code into the class file
+ //Copy and paste this code into the class file//
  
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
@@ -42,28 +42,27 @@ namespace YourProjectName
 
 5. Set Debug and Build Settings
 	Right-click your project → Properties.
-	//Add to Post-Build Event Command Line ( For Revit 2023) 
-	Copy "$(TargetDir)$(TargetFileName)" "$(AppData)\Autodesk\Revit\Addins\2023\"
+	//Add to Post-Build Event Command Line (For Revit 2023)// 
+	Copy "$(TargetDir)"."" "$(AppData)\Autodesk\Revit\Addins\2023\"
 
 	Under Debug Settings >> Start External Program:
 	C:\Program Files\Autodesk\Revit 2023\Revit.exe
 
 6. Create an Add-In Manifest File
 	Create a .addin file (New >> Application Manifest File >> NewFileName.addin) and paste this content:
-	//Addin Manifest File
-	<?xml version="1.0" encoding="utf-8" standalone="no"?>
-	<RevitAddIns>
- 		 <AddIn Type="Command">
-   		 	<Assembly>ProjectName.dll</Assembly>
-    			<FullClassName>ProjectName.ClassName</FullClassName>
-    			<Text>Add-In Name</Text>
-    			<Description>Short description of your add-in</Description>
-   		 	<AddInId>YOUR-UNIQUE-GUID-HERE</AddInId>
-   		 	<VisibilityMode>AlwaysVisible</VisibilityMode>
-    			<VendorId>YourCompanyName</VendorId>
-    			<VendorDescription>Your company details</VendorDescription>
-  		</AddIn>
-	</RevitAddIns>
+	//Addin Manifest File//
+
+	<?xml version="1.0" encoding="utf-16" standalone="no"?>
+<RevitAddIns>
+<<AddIn Type="Command">
+	<Assembly>PrrojectName.dll</Assembly>
+	<AddInId>UNIQUE-GU1D</AddInId>
+	<FullClassName>ProjectName.ClassName</FullClassName>
+	<Text>DescribeCommand</Text>
+	<VendorId>CompanyName</VendorId>
+	<VendorDescription>Company Details</VendorDescription>
+</AddIn>
+</RevitAddIns>
 
 Replace placeholders (e.g., ProjectName, ClassName) with your details.
 
