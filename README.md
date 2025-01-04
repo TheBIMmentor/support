@@ -14,8 +14,10 @@ Guides and Boilerplate code for starting your Revit Addins
 	Right-click each added Reference (or Alt + Enter on PC) → Properties → Set Copy Local to False.
 4. Add Boilerplate Code
 	Right-click your project → Add → Class → Name it.
-	Copy and paste this code into the class file:
-
+	
+ 
+ //Copy and paste this code into the class file
+ 
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
@@ -40,7 +42,7 @@ namespace YourProjectName
 
 5. Set Debug and Build Settings
 	Right-click your project → Properties.
-	Add to Post-Build Event Command Line ( For Revit 2023) :
+	//Add to Post-Build Event Command Line ( For Revit 2023) 
 	Copy "$(TargetDir)$(TargetFileName)" "$(AppData)\Autodesk\Revit\Addins\2023\"
 
 	Under Debug Settings >> Start External Program:
@@ -48,7 +50,7 @@ namespace YourProjectName
 
 6. Create an Add-In Manifest File
 	Create a .addin file (New >> Application Manifest File >> NewFileName.addin) and paste this content:
-	
+	//Addin Manifest File
 	<?xml version="1.0" encoding="utf-8" standalone="no"?>
 	<RevitAddIns>
  		 <AddIn Type="Command">
