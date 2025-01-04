@@ -55,7 +55,7 @@ namespace YourProjectName
 	<?xml version="1.0" encoding="utf-16" standalone="no"?>
 <RevitAddIns>
 <<AddIn Type="Command">
-	<Assembly>PrrojectName.dll</Assembly>
+	<Assembly>ProjectName.dll</Assembly>
 	<AddInId>UNIQUE-GU1D</AddInId>
 	<FullClassName>ProjectName.ClassName</FullClassName>
 	<Text>DescribeCommand</Text>
