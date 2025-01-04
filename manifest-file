@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16" standalone="no"?>
+<RevitAddIns>
+<<AddIn Type="Command">
+	<Assembly>PrrojectName.dll</Assembly>
+	<AddInId>UNIQUE-GU1D</AddInId>
+	<FullClassName>ProjectName.ClassName</FullClassName>
+	<Text>DescribeCommand</Text>
+	<VendorId>CompanyName</VendorId>
+	<VendorDescription>Company Details</VendorDescription>
+</AddIn>
+</RevitAddIns>
