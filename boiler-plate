@@ -1,6 +1,4 @@
-
 //Guides and Boilerplate code for starting your Revit Addins
-
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
@@ -8,7 +6,7 @@ using Autodesk.Revit.UI.Selection;
 
 namespace YourProjectName
 {
-    [Transaction(TransactionMode.Manual]
+    [Transaction(TransactionMode.Manual)]
     public class ClassName : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
