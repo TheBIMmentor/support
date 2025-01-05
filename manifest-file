@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-16" standalone="no"?>
 <RevitAddIns>
-<<AddIn Type="Command">
-	<Assembly>PrrojectName.dll</Assembly>
+<AddIn Type="Command">
+	<Assembly>ProjectName.dll</Assembly>
 	<AddInId>UNIQUE-GU1D</AddInId>
 	<FullClassName>ProjectName.ClassName</FullClassName>
 	<Text>DescribeCommand</Text>
